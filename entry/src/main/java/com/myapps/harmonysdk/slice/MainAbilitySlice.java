@@ -44,8 +44,10 @@ public class MainAbilitySlice extends AbilitySlice {
             }
         });
 
-
         appMessagingButton.setClickedListener(component -> {
+            // present(new AppMessagingSlice(), new Intent()));
+
+            // Example for close CustomDialog with swipe right
             Component container = LayoutScatter.getInstance(getContext()).parse(ResourceTable.Layout_layout_custom_dialog, null, false);
             dialog = new CommonDialog(getContext());
             dialog.setContentCustomComponent(container);
@@ -55,8 +57,7 @@ public class MainAbilitySlice extends AbilitySlice {
         });
 
 
-//        present(new AppMessagingSlice(), new Intent());
-        // Dialog Box Swipe Right Issue
+        // Dialog Box Swipe Right Issue -- Custom Solution
 /*        responsiveDesignButton.setClickedListener(component -> {
             Component container = LayoutScatter.getInstance(getContext()).parse(ResourceTable.Layout_layout_custom_dialog, null, false);
             dialog = new CommonDialog(getContext());
