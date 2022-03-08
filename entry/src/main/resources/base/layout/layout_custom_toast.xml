@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_content"
+    ohos:width="match_content"
+    ohos:orientation="vertical">
+    <Text
+        ohos:id="$+id:msg_toast"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:padding="8vp"
+        ohos:layout_alignment="center"
+        ohos:text_size="13fp"
+        ohos:text="Please check your information."
+        ohos:background_element="$graphic:background_toast_element"
+        ohos:multiple_lines="true"/>
+</DirectionalLayout>

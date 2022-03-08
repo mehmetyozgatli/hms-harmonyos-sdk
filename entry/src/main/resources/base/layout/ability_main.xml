@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    ohos:id="$+id:main_layout"
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Button
+        ohos:id="$+id:responsive_design_button"
+        ohos:width="120vp"
+        ohos:height="match_content"
+        ohos:text="Responsive Design"
+        ohos:text_color="#fff"
+        ohos:background_element="$graphic:background_button"
+        ohos:padding="5vp"
+        ohos:top_margin="20vp"
+        ohos:bottom_margin="10vp"
+        ohos:layout_alignment="center"/>
+
+    <Button
+        ohos:id="$+id:auth_service_button"
+        ohos:width="100vp"
+        ohos:height="match_content"
+        ohos:text="Auth Service"
+        ohos:text_color="#fff"
+        ohos:background_element="$graphic:background_button"
+        ohos:padding="5vp"
+        ohos:bottom_margin="10vp"
+        ohos:layout_alignment="center"/>
+
+    <Button
+        ohos:id="$+id:app_messaging_button"
+        ohos:width="100vp"
+        ohos:height="match_content"
+        ohos:text="App Messaging"
+        ohos:text_color="#fff"
+        ohos:background_element="$graphic:background_button"
+        ohos:padding="5vp"
+        ohos:bottom_margin="10vp"
+        ohos:layout_alignment="center"/>
+
+</DirectionalLayout>

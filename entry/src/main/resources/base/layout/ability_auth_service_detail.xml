@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Image
+        ohos:id="$+id:user_image"
+        ohos:height="75vp"
+        ohos:width="75vp"
+        ohos:bottom_margin="10vp"
+        ohos:image_src="$media:icon"
+        ohos:layout_alignment="top|center"
+        ohos:top_margin="10vp"/>
+
+    <DirectionalLayout
+        ohos:id="$+id:text_layout"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:alignment="center"
+        ohos:layout_alignment="center"
+        ohos:orientation="vertical">
+
+        <DirectionalLayout
+            ohos:id="$+id:text_name_layout"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:alignment="center"
+            ohos:layout_alignment="center"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:id="$+id:name_label"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="Name: "
+                ohos:text_weight="700"/>
+
+            <Text
+                ohos:id="$+id:name"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="Name"/>
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:id="$+id:text_phone_layout"
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:alignment="center"
+            ohos:layout_alignment="center"
+            ohos:orientation="horizontal">
+
+            <Text
+                ohos:id="$+id:mobilePhone_label"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="Phone: "
+                ohos:text_weight="700"
+                ohos:top_margin="5vp"/>
+
+            <Text
+                ohos:id="$+id:mobilePhone"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:text="Phone"
+                ohos:top_margin="5vp"/>
+
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <DirectionalLayout
+        ohos:id="$+id:button_layout"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:alignment="center"
+        ohos:bottom_margin="10vp"
+        ohos:layout_alignment="bottom"
+        ohos:orientation="vertical">
+
+        <Button
+            ohos:id="$+id:updateProfile"
+            ohos:height="match_content"
+            ohos:width="120vp"
+            ohos:background_element="$graphic:background_button"
+            ohos:padding="5vp"
+            ohos:text="Update Profile"
+            ohos:text_color="#fff"
+            ohos:text_size="16fp"
+            ohos:top_margin="5vp"/>
+
+        <Button
+            ohos:id="$+id:SignOut"
+            ohos:height="match_content"
+            ohos:width="80vp"
+            ohos:background_element="$graphic:background_button"
+            ohos:padding="5vp"
+            ohos:text="Sign Out"
+            ohos:text_color="#fff"
+            ohos:text_size="16fp"
+            ohos:top_margin="5vp"/>
+    </DirectionalLayout>
+
+    <com.github.rahatarmanahmed.cpv.CircularProgressView
+        ohos:id="$+id:cpv_authService_detail"
+        ohos:height="50vp"
+        ohos:width="50vp"
+        ohos:cpv_animAutostart="true"
+        ohos:cpv_animDuration="8000"
+        ohos:cpv_indeterminate="true"
+        ohos:cpv_thickness="8"
+        ohos:layout_alignment="center"/>
+
+</StackLayout>

@@ -1,0 +1,105 @@
+<StackLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent">
+
+    <DirectionalLayout
+        ohos:id="$+id:welcomeText_logo_wearable_layout"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:layout_alignment="top"
+        ohos:orientation="vertical"
+        ohos:visibility="hide">
+
+        <Text
+            ohos:id="$+id:welcome_text_wearable"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:layout_alignment="center"
+            ohos:margin="10vp"
+            ohos:text="WELCOME"
+            ohos:text_size="40fp"/>
+
+        <Image
+            ohos:id="$+id:logo_image_wearable"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:image_src="$media:logo"
+            ohos:layout_alignment="center"/>
+
+    </DirectionalLayout>
+
+
+    <Text
+        ohos:id="$+id:welcome_text"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="top|center"
+        ohos:margin="10vp"
+        ohos:text="WELCOME"
+        ohos:text_size="40fp"/>
+
+    <Image
+        ohos:id="$+id:logo_image"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:image_src="$media:logo"
+        ohos:layout_alignment="center"/>
+
+
+    <DirectionalLayout
+        ohos:id="$+id:huawei_id_button_layout"
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:bottom_margin="20vp"
+        ohos:layout_alignment="bottom"
+        ohos:orientation="vertical">
+
+        <Button
+            ohos:id="$+id:btn_hwid_sign_in"
+            ohos:height="match_parent"
+            ohos:width="match_content"
+            ohos:background_element="$graphic:capsule_button_element"
+            ohos:element_left="$media:icon_huawei"
+            ohos:layout_alignment="horizontal_center"
+            ohos:left_padding="16vp"
+            ohos:min_width="280vp"
+            ohos:padding="2vp"
+            ohos:right_padding="16vp"
+            ohos:text="Sign in with HUAWEI ID"
+            ohos:text_color="#ffffff"
+            ohos:text_size="20fp"
+            ohos:top_margin="5vp"/>
+
+        <Button
+            ohos:id="$+id:btn_hwid_sign_out"
+            ohos:height="match_parent"
+            ohos:width="match_content"
+            ohos:background_element="$graphic:capsule_button_element"
+            ohos:layout_alignment="horizontal_center"
+            ohos:left_padding="16vp"
+            ohos:min_width="280vp"
+            ohos:padding="2vp"
+            ohos:right_padding="16vp"
+            ohos:text="Sign Out"
+            ohos:text_color="#ffffff"
+            ohos:text_size="20fp"
+            ohos:top_margin="5vp"/>
+
+        <Button
+            ohos:id="$+id:btn_hwid_cancel_authorization"
+            ohos:height="match_parent"
+            ohos:width="match_content"
+            ohos:background_element="$graphic:capsule_button_element"
+            ohos:layout_alignment="horizontal_center"
+            ohos:left_padding="16vp"
+            ohos:min_width="280vp"
+            ohos:padding="2vp"
+            ohos:right_padding="16vp"
+            ohos:text="Cancel Authorization"
+            ohos:text_color="#ffffff"
+            ohos:text_size="20fp"
+            ohos:top_margin="5vp"/>
+    </DirectionalLayout>
+
+</StackLayout>

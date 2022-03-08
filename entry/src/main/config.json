@@ -1,0 +1,97 @@
+{
+  "app": {
+    "bundleName": "com.myapps.harmonysdk",
+    "vendor": "myapps",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.myapps.harmonysdk",
+    "name": ".MyApplication",
+    "mainAbility": "com.myapps.harmonysdk.MainAbility",
+    "deviceType": [
+      "phone",
+      "tablet",
+      "tv",
+      "wearable"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "action.appmessaging",
+              "action.authservice",
+              "action.authserviceregister",
+              "action.authservicedetail",
+              "action.responsivedesign"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.myapps.harmonysdk.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "permissions": [
+          "com.huawei.agconnect.core.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.huawei.agconnect.core.provider.AGConnectInitializeAbility",
+        "type": "data",
+        "uri": "dataability://com.myapps.harmonysdk.AGConnectInitializeAbility"
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.INTERNET",
+        "usedScene": {
+          "ability": [
+            "com.myapps.harmonysdk.MainAbility"
+          ],
+          "when": "inuse"
+        }
+      },
+      {
+        "name": "ohos.permission.VIBRATE",
+        "usedScene": {
+          "ability": [
+            "com.myapps.harmonysdk.MainAbility"
+          ],
+          "when": "inuse"
+        }
+      }
+    ],
+    "metaData": {
+      "customizeData": [
+        {
+          "name": "com.huawei.hms.client.appid",
+          "value": "104934165"
+        }
+      ]
+    },
+    "defPermissions": [
+      {
+        "availableScope": "",
+        "grantMode": "",
+        "name": "com.huawei.agconnect.core.DataAbilityShellProvider.PROVIDER"
+      }
+    ]
+  }
+}

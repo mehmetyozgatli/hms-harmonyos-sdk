@@ -1,0 +1,58 @@
+apply plugin: 'com.huawei.ohos.hap'
+apply plugin: 'com.huawei.ohos.decctest'
+apply plugin: 'com.huawei.agconnect'
+//For instructions on signature configuration, see https://developer.harmonyos.com/en/docs/documentation/doc-guides/ide_debug_device-0000001053822404#EN-US_TOPIC_0000001154985555__section1112183053510
+ohos {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\m00599114\\DevEcoStudioProjects\\HarmonySDK\\harmonysdk.p12')
+            storePassword '0000001F4C292CCA342B421E0DE0821913C5A6388DD04B7774E4BF90E2460416A129E4034E54E4EBE842920D5659EE'
+            keyAlias = 'harmonysdk'
+            keyPassword '0000001F0811F9E47FDDDA21391807A3D6835E66AD4A48E3E75E203CB7434D26B4820E6B538AEC4080DB55932D648B'
+            signAlg = 'SHA256withECDSA'
+            profile file('C:\\Users\\m00599114\\DevEcoStudioProjects\\HarmonySDK\\HarmonyOS SDKDebug.p7b')
+            certpath file('C:\\Users\\m00599114\\DevEcoStudioProjects\\HarmonySDK\\HarmonyOS SDK.cer')
+        }
+    }
+    compileSdkVersion 5
+    defaultConfig {
+        compatibleSdkVersion 5
+    }
+    buildTypes {
+        release {
+            proguardOpt {
+                proguardEnabled false
+                rulesFiles 'proguard-rules.pro'
+            }
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
+    testImplementation 'junit:junit:4.13'
+    ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.100'
+
+    // Account Kit SDK
+    implementation 'com.huawei.hms:hwid-ohos:6.1.0.300'
+
+    // AGC SDK
+    implementation 'com.huawei.agconnect:agconnect-core-harmony:1.2.1.300'
+
+    // Auth Service
+    implementation "com.huawei.agconnect:agconnect-auth-harmony:1.2.1.300"
+
+    // App Messaging
+    implementation 'com.huawei.agconnect:agconnect-appmessaging-harmony:1.2.1.300'
+
+    // Glide
+    implementation 'io.openharmony.tpc.thirdlib:glide:1.1.2'
+
+    // ProgressView
+    implementation 'io.openharmony.tpc.thirdlib:CircularProgressView:1.0.2'
+
+}
+decc {
+    supportType = ['html', 'xml']
+}

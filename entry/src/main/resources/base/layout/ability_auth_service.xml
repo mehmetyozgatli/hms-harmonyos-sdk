@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:width="match_parent"
+    ohos:height="match_parent"
+    ohos:orientation="vertical">
+
+    <TextField
+        ohos:id="$+id:countryCode"
+        ohos:height="match_content"
+        ohos:width="100vp"
+        ohos:hint="Your countryCode"
+        ohos:text_input_type="pattern_number"
+        ohos:text_size="20px"
+        ohos:text_color="#fff"
+        ohos:bubble_height="10vp"
+        ohos:bubble_width="10vp"
+        ohos:background_element="$graphic:background_textfield"
+        ohos:padding="5vp"
+        ohos:top_margin="20vp"
+        ohos:bottom_margin="10vp"
+        ohos:layout_alignment="center"
+        />
+
+    <TextField
+        ohos:id="$+id:phoneNumber"
+        ohos:height="match_content"
+        ohos:width="100vp"
+        ohos:hint="Your phone"
+        ohos:text_input_type="pattern_number"
+        ohos:text_size="20px"
+        ohos:text_color="#fff"
+        ohos:bubble_height="10vp"
+        ohos:bubble_width="10vp"
+        ohos:background_element="$graphic:background_textfield"
+        ohos:padding="5vp"
+        ohos:bottom_margin="10vp"
+        ohos:layout_alignment="center"
+        />
+
+    <TextField
+        ohos:id="$+id:password"
+        ohos:height="match_content"
+        ohos:width="100vp"
+        ohos:hint="Password"
+        ohos:text_input_type="pattern_password"
+        ohos:text_size="20px"
+        ohos:text_color="#fff"
+        ohos:bubble_height="10vp"
+        ohos:bubble_width="10vp"
+        ohos:background_element="$graphic:background_textfield"
+        ohos:padding="5vp"
+        ohos:bottom_margin="10vp"
+        ohos:layout_alignment="center"
+        />
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical"
+        ohos:alignment="center">
+
+        <Button
+            ohos:id="$+id:Login"
+            ohos:height="match_content"
+            ohos:width="70vp"
+            ohos:background_element="$graphic:background_button"
+            ohos:text="Login"
+            ohos:text_size="16fp"
+            ohos:text_color="#fff"
+            ohos:padding="5vp"/>
+
+        <Button
+            ohos:id="$+id:RegisterPage"
+            ohos:height="match_content"
+            ohos:width="70vp"
+            ohos:background_element="$graphic:background_button"
+            ohos:text="Register"
+            ohos:text_size="16fp"
+            ohos:text_color="#fff"
+            ohos:padding="5vp"
+            ohos:top_margin="5vp"/>
+    </DirectionalLayout>
+
+</DirectionalLayout>
